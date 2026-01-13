@@ -1,0 +1,25 @@
+<%-include('partials/header')%>
+<body style="background-image: url(img/arquitetura.jpg)">
+    <div class="container mt-5" >
+      <div class="row justify-content-center" >
+          <div class="col-md-6">
+              <div class="card shadow p-4">
+                  <h2 class="text-center mb-4">Envie Sua Mensagem</h2>
+                  <form method="post" action="/salvardados">
+                      <div class="mb-3">
+                          <input name="nome" type="text" class="form-control" placeholder="Digite seu Nome" required>
+                      </div>
+                      <div class="mb-3">
+                          <input name="email" type="email" class="form-control" placeholder="Digite seu E-mail" required>
+                      </div>
+                      <div class="mb-3">
+                          <textarea name="mensagem" class="form-control" rows="4" placeholder="Digite sua Mensagem" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success w-100">Enviar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<%-include('partials/footer')%>
